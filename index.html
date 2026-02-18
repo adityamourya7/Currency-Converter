@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="page">
+        <div id="container">
+            <input id="label" type="text" placeholder="Enter amount">
+            <div id="from-to-container">
+                <!-- This is from section -->
+                <div id="from-section">
+                    <label id="label1" for="from-currency">Choose currency</label>
+                    <select id="fromselect" name="fromlist" class="dropdown">
+
+                    </select>
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                </div>
+                <i id="xchange-icon" class="ri-arrow-left-right-line"></i>
+                <!-- This is to section -->
+                <div id="to-section">
+                    <label id="label2" for="from-currency">Choose currency</label>
+                    <select id="toselect" name="tolist" class="dropdown">
+
+                    </select>
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                </div>
+            </div>
+
+            <div id="msgCont">
+                <p id="msgpara"></p>
+                <h2 id="xchange-msg"></h2>
+            </div>
+
+            <!-- Exchange Button -->
+            <div id="btn-div">
+                <button id="xchange-btn">Exchange</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="countrylist.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
